@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Truck_Number: 1
+  Lat: 1.5
+  Log: 1.5
+
+two:
+  Truck_Number: 1
+  Lat: 1.5
+  Log: 1.5
