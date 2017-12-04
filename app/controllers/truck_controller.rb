@@ -1,4 +1,5 @@
 class TruckController < ApplicationController
+	 protect_from_forgery with: :null_session
 	def get_fields
 		num = params[:Truck_Number]
 		@truck =Truck.new
