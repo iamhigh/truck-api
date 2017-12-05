@@ -8,7 +8,7 @@ class TruckController < ApplicationController
 	end
 	def add_truck
 		@truck =Truck.new
-		@truck.Truck_Number = params[:Truck_Number]
+		@truck.truck_number = params[:Truck_Number]
 		@truck.Lat = params[:Lat]
 		@truck.Log = params[:Log]
 		if @truck.Truck_Number==nil 
