@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20171203215831) do
 
   create_table "trucks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "truck_number"
+    t.integer "Truck_Number"
     t.float "Lat", limit: 24
     t.float "Log", limit: 24
     t.datetime "created_at", null: false
