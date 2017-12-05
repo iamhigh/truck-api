@@ -11,7 +11,7 @@ class TruckController < ApplicationController
 		@truck.truck_number = params[:Truck_Number]
 		@truck.Lat = params[:Lat]
 		@truck.Log = params[:Log]
-		if @truck.Truck_Number==nil 
+		if @truck.truck_number==nil 
 			output = {'Message' => 'Please Enter Truck_Number'}.to_json
 		elsif @truck.Lat == nil 
 			output = {'Message' => 'Please Enter Lat'}.to_json
