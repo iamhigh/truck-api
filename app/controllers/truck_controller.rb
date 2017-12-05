@@ -24,7 +24,9 @@ class TruckController < ApplicationController
 		render json: output
 	end
 	def show_trucks
+		@p=Truck.all
 		@trucks=Truck.all.paginate(page: params[:page], per_page: 10)
-	end
+  	 paginate json: @p, per_page: 10
+  end 
 
 end
