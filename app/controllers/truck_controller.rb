@@ -2,8 +2,8 @@ class TruckController < ApplicationController
 	 protect_from_forgery with: :null_session
 	def get_fields
 		num = params[:Truck_Number]
-		@truck =Truck.new
-		@truck = Truck.where("Truck_Number = ?",num).first
+		#@truck =Truck.new
+		@truck = Truck.where("Truck_Number = ?",num)
 	    render json: @truck
 	end
 	def add_truck
